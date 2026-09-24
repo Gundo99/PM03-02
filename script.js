@@ -24,11 +24,6 @@ contactForm.addEventListener("submit", function (event) {
 
     let isValid = true;
 
-
-    // -------------------------
-    // NAME VALIDATION
-    // -------------------------
-
     if (nameInput.value.trim() === "") {
 
         document.getElementById("nameError").textContent =
@@ -37,11 +32,6 @@ contactForm.addEventListener("submit", function (event) {
         isValid = false;
     }
 
-
-    // -------------------------
-    // DEPARTMENT VALIDATION
-    // -------------------------
-
     if (departmentInput.value === "") {
 
         document.getElementById("departmentError").textContent =
@@ -49,11 +39,6 @@ contactForm.addEventListener("submit", function (event) {
 
         isValid = false;
     }
-
-
-    // -------------------------
-    // EMAIL VALIDATION
-    // -------------------------
 
     const email = emailInput.value.trim();
 
@@ -77,10 +62,6 @@ contactForm.addEventListener("submit", function (event) {
     }
 
 
-    // -------------------------
-    // CATEGORY VALIDATION
-    // -------------------------
-
     if (categoryInput.value === "") {
 
         document.getElementById("categoryError").textContent =
@@ -88,11 +69,6 @@ contactForm.addEventListener("submit", function (event) {
 
         isValid = false;
     }
-
-
-    // -------------------------
-    // MESSAGE VALIDATION
-    // -------------------------
 
     const message = messageInput.value.trim();
 
@@ -110,11 +86,6 @@ contactForm.addEventListener("submit", function (event) {
 
         isValid = false;
     }
-
-
-    // -------------------------
-    // SUCCESS
-    // -------------------------
 
     if (isValid) {
 
