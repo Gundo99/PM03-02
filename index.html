@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Workplace Contact Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Workplace Contact Form</h1>
+
+        <form id="contactForm">
+
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Name *</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                >
+
+                <p id="nameError" class="error"></p>
+            </div>
+
+
+            <!-- Department -->
+            <div class="form-group">
+                <label for="department">Department *</label>
+
+                <select id="department" name="department">
+                    <option value="">Select department</option>
+                    <option value="IT">IT</option>
+                    <option value="Finance">Finance</option>
+                    <option value="HR">HR</option>
+                    <option value="Operations">Operations</option>
+                </select>
+
+                <p id="departmentError" class="error"></p>
+            </div>
+
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email *</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                >
+
+                <p id="emailError" class="error"></p>
+            </div>
+
+
+            <!-- Issue Category -->
+            <div class="form-group">
+                <label for="category">Issue Category *</label>
+
+                <select id="category" name="category">
+                    <option value="">Select issue category</option>
+                    <option value="Hardware">Hardware</option>
+                    <option value="Software">Software</option>
+                    <option value="Network">Network</option>
+                    <option value="Access">Access</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <p id="categoryError" class="error"></p>
+            </div>
+
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Message *</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                ></textarea>
+
+                <p id="messageError" class="error"></p>
+            </div>
+
+
+            <button type="submit">
+                Submit Request
+            </button>
+
+            <p id="successMessage" class="success"></p>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
